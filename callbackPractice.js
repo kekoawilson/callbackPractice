@@ -22,8 +22,10 @@ and what you should write is the sayHi function that makes the code above work,
 
 // 1. Write a function called first that returns the first item of the array using a callback function
 
-  // Code Here
-
+function first(arr, cb) {
+  
+  return cb(arr[0]);
+}
   
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 first(names, function(firstName){
@@ -35,8 +37,10 @@ first(names, function(firstName){
 
 // 2. Write a function called last which returns the last item of the array using a callback function.
 
-  //Code Here
-
+function last(arr, cb) {
+  
+  return cb(arr[arr.length - 1]);
+}
 
 
 last(names, function(lastName){
@@ -48,8 +52,10 @@ last(names, function(lastName){
 
 // 3. Write a function called multiply that multiplies two numbers. Invoke the callback with the result of the multiplication. 
 
-  //Code Here
-
+function multiply(num1, num2, cb) {
+  var math = num1 * num2;
+  return cb(math);
+}
 
 
 multiply(4, 3, function(answer){
@@ -62,7 +68,11 @@ multiply(4, 3, function(answer){
 // If it does, invoke the callback with true as an argument. 
 // If the name does not exist, invoke the callback with false as an argument.
 
-  //Code Here 
+  function contains(arr, str, cb) {
+    result === 'Colt' ? true : false;  
+    return cb(result)
+    
+  } 
 
 
 
@@ -80,7 +90,9 @@ contains(names, 'Colt', function(result){
 // 5. Write a function called uniq that takes the names array and removes all duplicates.
 // Invoke the callback with the modified array as an argument.
 
-  //Code Here
+function uniq(arr, cb) {
+
+}
 
 
 
@@ -104,7 +116,9 @@ each(names, function(item, indice){
 // 7. Write a function called getUserById that looks at the array of user objects (users) and searches for a user by ID.
 // When the correct user object is found, invoke the callback with the user object as an argument.
 
-// Code here
+function getUserById(arr, str, callb) {
+  
+}
 
 
 
